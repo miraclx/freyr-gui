@@ -13,7 +13,7 @@ A cross-platform front-end GUI for freyr-js written in Rust
   git clone https://github.com/miraclx/freyr-gui
   cd freyr-gui
   # Run the preview
-  pyuic5 -p main.ui
+  pyuic5 -p src/ui/main.ui
   ```
 
 ## Screenshots
