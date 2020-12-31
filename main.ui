@@ -1,0 +1,4430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>freyrGUI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_11">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="placeholderText">
+           <string>Enter a URI, URL or Search Query</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_4">
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="icon">
+           <iconset theme="next">
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="movable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="icon">
+          <iconset theme="folder-remote">
+           <normaloff>.</normaloff>.</iconset>
+         </attribute>
+         <attribute name="title">
+          <string>Downloads</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QSplitter" name="splitter">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="childrenCollapsible">
+             <bool>false</bool>
+            </property>
+            <widget class="QGroupBox" name="groupBox_3">
+             <property name="title">
+              <string>Queries</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="0">
+               <widget class="QTreeWidget" name="treeWidget">
+                <property name="dragDropMode">
+                 <enum>QAbstractItemView::DragOnly</enum>
+                </property>
+                <property name="alternatingRowColors">
+                 <bool>true</bool>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::ExtendedSelection</enum>
+                </property>
+                <property name="rootIsDecorated">
+                 <bool>false</bool>
+                </property>
+                <property name="uniformRowHeights">
+                 <bool>true</bool>
+                </property>
+                <property name="itemsExpandable">
+                 <bool>false</bool>
+                </property>
+                <property name="sortingEnabled">
+                 <bool>true</bool>
+                </property>
+                <property name="allColumnsShowFocus">
+                 <bool>true</bool>
+                </property>
+                <attribute name="headerStretchLastSection">
+                 <bool>false</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>#</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>URI</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Tracks</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Completed</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Type</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Progress</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Status</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Speed</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>ETA</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Session Download</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Session Runtime</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Added On</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Completed On</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Session Output</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Service</string>
+                 </property>
+                </column>
+                <item>
+                 <property name="text">
+                  <string>03</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>spotify:album:7xjGoFf43p1AnDYNwSlpsm</string>
+                 </property>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>Album</string>
+                 </property>
+                 <property name="text">
+                  <string>34%</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>Downloading</string>
+                 </property>
+                 <property name="text">
+                  <string>2.39 Mb/s</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>00:02:47</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>8.97 MiB</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>00:01:24</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>28/12/20 01:51 AM</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>28/12/20 01:53 AM</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>9.74 MiB</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>Spotify</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>02</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>spotify:track:1aqDMzNg2OfWozoQi4CIkS</string>
+                 </property>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>Track</string>
+                 </property>
+                 <property name="text">
+                  <string>100%</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>Completed</string>
+                 </property>
+                 <property name="text">
+                  <string>0 B/s</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>∞</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>4.38 MiB</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>00:00:43</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>28/12/20 01:47 AM</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>28/12/20 01:48 AM</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>5.43 MiB</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>Spotify</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>01</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>spotify:album:7v0KN0VlHJZrhAbSbxEZvZ</string>
+                 </property>
+                 <property name="text">
+                  <string>10</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>3</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>Album</string>
+                 </property>
+                 <property name="text">
+                  <string>48.9%</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>Downloading</string>
+                 </property>
+                 <property name="text">
+                  <string>3.21 Mb/s</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>00:04:53</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>36.57 MiB</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>00:01:53</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>28/12/20 01:40 AM</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>28/12/20 01:55 AM</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>23.07 MiB</string>
+                 </property>
+                 <property name="textAlignment">
+                  <set>AlignTrailing|AlignVCenter</set>
+                 </property>
+                 <property name="text">
+                  <string>Spotify</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QTabWidget" name="tabWidget_2">
+             <property name="tabPosition">
+              <enum>QTabWidget::South</enum>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <property name="movable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="tab_3">
+              <attribute name="icon">
+               <iconset theme="document-properties">
+                <normaloff>.</normaloff>.</iconset>
+              </attribute>
+              <attribute name="title">
+               <string>General</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QScrollArea" name="scrollArea_2">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_4">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>750</width>
+                    <height>267</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_8">
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_5">
+                     <item>
+                      <widget class="QLabel" name="label_13">
+                       <property name="text">
+                        <string>Progress:</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QProgressBar" name="progressBar">
+                       <property name="value">
+                        <number>49</number>
+                       </property>
+                       <property name="textVisible">
+                        <bool>false</bool>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_14">
+                       <property name="text">
+                        <string>48.9%</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QGroupBox" name="groupBox">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="title">
+                      <string>Transfer</string>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_13">
+                      <item row="0" column="0">
+                       <layout class="QGridLayout" name="gridLayout_12">
+                        <item row="2" column="2">
+                         <widget class="QLabel" name="label_17">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Retries:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="2">
+                         <widget class="QLabel" name="label_12">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Tracks Actively Downloading:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="label_4">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Downloaded:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="2">
+                         <widget class="QLabel" name="label_5">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Connections:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="QLabel" name="label_16">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Status:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_2">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>ETA:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="label_15">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Download Speed:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QLabel" name="label_21">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>36.57 MiB</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="QLabel" name="label_23">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Downloading</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QLabel" name="label_22">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>3.21 Mb/s</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Time Active:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QLabel" name="label_20">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>00:01:53</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="QLabel" name="label_24">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>00:04:53</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="3">
+                         <widget class="QLabel" name="label_25">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>10</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="3">
+                         <widget class="QLabel" name="label_26">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>3</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="3">
+                         <widget class="QLabel" name="label_27">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>2</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QGroupBox" name="groupBox_2">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="title">
+                      <string>Information</string>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_15">
+                      <item row="0" column="0">
+                       <layout class="QGridLayout" name="gridLayout_14">
+                        <item row="0" column="5">
+                         <widget class="QLabel" name="label_34">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>3</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="5">
+                         <widget class="QLabel" name="label_35">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>0</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="2">
+                         <widget class="QLabel" name="label_19">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Albums:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="2">
+                         <widget class="QLabel" name="label_11">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Tracks:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="3">
+                         <widget class="QLabel" name="label_33">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>1</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="3">
+                         <widget class="QLabel" name="label_32">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>10</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_7">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Total Output Size:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QLabel" name="label_30">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="4">
+                         <widget class="QLabel" name="label_10">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Already Exists:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="4">
+                         <widget class="QLabel" name="label_9">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Passed:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="QLabel" name="label_31">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>+119.50%</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="4">
+                         <widget class="QLabel" name="label_3">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Failed:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QLabel" name="label_8">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Added On:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QLabel" name="label_29">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>28/12/20 01:40 AM</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="5">
+                         <widget class="QLabel" name="label_36">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>0</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="QLabel" name="label_18">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Completed On:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_6">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Delta:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QLabel" name="label_28">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>23.07 MiB</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="QLabel" name="label_37">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Save Path:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="QLabel" name="label_38">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>/home/user/Music/</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                          </property>
+                          <property name="textInteractionFlags">
+                           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="2">
+                         <widget class="QLabel" name="label_39">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Artists:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="3">
+                         <widget class="QLabel" name="label_40">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>1</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="4">
+                         <widget class="QLabel" name="label_41">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>Bitrate:</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="5">
+                         <widget class="QLabel" name="label_42">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="text">
+                           <string>320Kbps</string>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="tab_4">
+              <attribute name="icon">
+               <iconset theme="view-list-symbolic">
+                <normaloff>.</normaloff>.</iconset>
+              </attribute>
+              <attribute name="title">
+               <string>Playlist</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <item row="0" column="0">
+                <widget class="QTreeWidget" name="treeWidget_6">
+                 <property name="alternatingRowColors">
+                  <bool>true</bool>
+                 </property>
+                 <property name="selectionMode">
+                  <enum>QAbstractItemView::ExtendedSelection</enum>
+                 </property>
+                 <property name="rootIsDecorated">
+                  <bool>false</bool>
+                 </property>
+                 <property name="uniformRowHeights">
+                  <bool>true</bool>
+                 </property>
+                 <property name="itemsExpandable">
+                  <bool>false</bool>
+                 </property>
+                 <property name="sortingEnabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="allColumnsShowFocus">
+                  <bool>true</bool>
+                 </property>
+                 <attribute name="headerStretchLastSection">
+                  <bool>false</bool>
+                 </attribute>
+                 <column>
+                  <property name="text">
+                   <string>#</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string notr="true">Title</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Album</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Artist</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>URI</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Progress</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Status</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Speed</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>ETA</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Size</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Output Size</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Delta (%)</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Source</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Source URI</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Retries</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Bitrate</string>
+                  </property>
+                 </column>
+                 <item>
+                  <property name="text">
+                   <string>10</string>
+                  </property>
+                  <property name="text">
+                   <string>High School Me</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:4c8SeWzX1nvSN7chHvyq8n</string>
+                  </property>
+                  <property name="text">
+                   <string>0%</string>
+                  </property>
+                  <property name="text">
+                   <string>Pending</string>
+                  </property>
+                  <property name="text">
+                   <string>0 B/s</string>
+                  </property>
+                  <property name="text">
+                   <string>∞</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>09</string>
+                  </property>
+                  <property name="text">
+                   <string>Until It Happens To You</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:0IJQOj33GVl6osZmxClKqV</string>
+                  </property>
+                  <property name="text">
+                   <string>0%</string>
+                  </property>
+                  <property name="text">
+                   <string>Pending</string>
+                  </property>
+                  <property name="text">
+                   <string>0 B/s</string>
+                  </property>
+                  <property name="text">
+                   <string>∞</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>08</string>
+                  </property>
+                  <property name="text">
+                   <string>Someone You Hate</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:2juRTLgqPmkOjgUCVcXOeC</string>
+                  </property>
+                  <property name="text">
+                   <string>0%</string>
+                  </property>
+                  <property name="text">
+                   <string>Finding Sources</string>
+                  </property>
+                  <property name="text">
+                   <string>0 B/s</string>
+                  </property>
+                  <property name="text">
+                   <string>∞</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>07</string>
+                  </property>
+                  <property name="text">
+                   <string>Santa's Real</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:6Gy3MOuOWPNs3nEorpdx5F</string>
+                  </property>
+                  <property name="text">
+                   <string>0%</string>
+                  </property>
+                  <property name="text">
+                   <string>Finding Sources</string>
+                  </property>
+                  <property name="text">
+                   <string>0 B/s</string>
+                  </property>
+                  <property name="text">
+                   <string>∞</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>06</string>
+                  </property>
+                  <property name="text">
+                   <string>Is It Just Me</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:38MKH1U8zGuzNXbm5tCBrn</string>
+                  </property>
+                  <property name="text">
+                   <string>60%</string>
+                  </property>
+                  <property name="text">
+                   <string>Downloading</string>
+                  </property>
+                  <property name="text">
+                   <string>2.11 Mb/s</string>
+                  </property>
+                  <property name="text">
+                   <string>00:00:29</string>
+                  </property>
+                  <property name="text">
+                   <string>7.64 MiB</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>YouTube</string>
+                  </property>
+                  <property name="text">
+                   <string>cuxNuMDet0M</string>
+                  </property>
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>05</string>
+                  </property>
+                  <property name="text">
+                   <string>Hypochondriac</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:73E2CgQVoVnyjZo6b3NO9a</string>
+                  </property>
+                  <property name="text">
+                   <string>99%</string>
+                  </property>
+                  <property name="text">
+                   <string>Encoding</string>
+                  </property>
+                  <property name="text">
+                   <string>0 B/s</string>
+                  </property>
+                  <property name="text">
+                   <string>∞</string>
+                  </property>
+                  <property name="text">
+                   <string>7.21 MiB</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>YouTube</string>
+                  </property>
+                  <property name="text">
+                   <string>dXbL0jYSt30</string>
+                  </property>
+                  <property name="text">
+                   <string>2</string>
+                  </property>
+                  <property name="text">
+                   <string>320 Kbps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>04</string>
+                  </property>
+                  <property name="text">
+                   <string>Lie</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:2ouNoo43UNurALLYLCapJv</string>
+                  </property>
+                  <property name="text">
+                   <string>30%</string>
+                  </property>
+                  <property name="text">
+                   <string>Downloading</string>
+                  </property>
+                  <property name="text">
+                   <string>1.10 Mb/s</string>
+                  </property>
+                  <property name="text">
+                   <string>00:00:56</string>
+                  </property>
+                  <property name="text">
+                   <string>7.36 MiB</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>YouTube</string>
+                  </property>
+                  <property name="text">
+                   <string>J5DNZ2r5Sx4</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>03</string>
+                  </property>
+                  <property name="text">
+                   <string>House With No Mirrors</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:3iPJ039BamX9MIVZQWEnnL</string>
+                  </property>
+                  <property name="text">
+                   <string>100%</string>
+                  </property>
+                  <property name="text">
+                   <string>Completed</string>
+                  </property>
+                  <property name="text">
+                   <string>0 B/s</string>
+                  </property>
+                  <property name="text">
+                   <string>∞</string>
+                  </property>
+                  <property name="text">
+                   <string>7.87 MiB</string>
+                  </property>
+                  <property name="text">
+                   <string>8.88 MiB</string>
+                  </property>
+                  <property name="text">
+                   <string>+ 112.83%</string>
+                  </property>
+                  <property name="text">
+                   <string>YouTube</string>
+                  </property>
+                  <property name="text">
+                   <string>a6DnlCx6bx0</string>
+                  </property>
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                  <property name="text">
+                   <string>320 Kbps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>02</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:1UTTbArdZ8Z7cBaAbDBAjK</string>
+                  </property>
+                  <property name="text">
+                   <string>100%</string>
+                  </property>
+                  <property name="text">
+                   <string>Completed</string>
+                  </property>
+                  <property name="text">
+                   <string>0 B/s</string>
+                  </property>
+                  <property name="text">
+                   <string>∞</string>
+                  </property>
+                  <property name="text">
+                   <string>4.77 MiB</string>
+                  </property>
+                  <property name="text">
+                   <string>5.66 MiB</string>
+                  </property>
+                  <property name="text">
+                   <string>+ 118.65%</string>
+                  </property>
+                  <property name="text">
+                   <string>YouTube</string>
+                  </property>
+                  <property name="text">
+                   <string>i70ZwQ3xtXU</string>
+                  </property>
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                  <property name="text">
+                   <string>320 Kbps</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>01</string>
+                  </property>
+                  <property name="text">
+                   <string>Matter To You</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:1InPL1Qm8qJC3FIIvFruNt</string>
+                  </property>
+                  <property name="text">
+                   <string>100%</string>
+                  </property>
+                  <property name="text">
+                   <string>Completed</string>
+                  </property>
+                  <property name="text">
+                   <string>0 B/s</string>
+                  </property>
+                  <property name="text">
+                   <string>∞</string>
+                  </property>
+                  <property name="text">
+                   <string>7.72 MiB</string>
+                  </property>
+                  <property name="text">
+                   <string>8.53 MiB</string>
+                  </property>
+                  <property name="text">
+                   <string>+ 110.49%</string>
+                  </property>
+                  <property name="text">
+                   <string>YouTube</string>
+                  </property>
+                  <property name="text">
+                   <string>MhEKwqmjmhA</string>
+                  </property>
+                  <property name="text">
+                   <string>0</string>
+                  </property>
+                  <property name="text">
+                   <string>320 Kbps</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="tab_5">
+              <attribute name="icon">
+               <iconset theme="folder">
+                <normaloff>.</normaloff>.</iconset>
+              </attribute>
+              <attribute name="title">
+               <string>Files</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout">
+                   <item alignment="Qt::AlignRight">
+                    <widget class="QLineEdit" name="lineEdit_4">
+                     <property name="placeholderText">
+                      <string>Filter files...</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QTreeWidget" name="treeWidget_2">
+                   <property name="alternatingRowColors">
+                    <bool>true</bool>
+                   </property>
+                   <property name="selectionMode">
+                    <enum>QAbstractItemView::ExtendedSelection</enum>
+                   </property>
+                   <property name="uniformRowHeights">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sortingEnabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="allColumnsShowFocus">
+                    <bool>true</bool>
+                   </property>
+                   <attribute name="headerStretchLastSection">
+                    <bool>false</bool>
+                   </attribute>
+                   <column>
+                    <property name="text">
+                     <string notr="true">Tracks</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>URI</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Progress</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Status</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Speed</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>ETA</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Size</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Output Size</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Delta (%)</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Source</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Source URI</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Retries</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Bitrate</string>
+                    </property>
+                   </column>
+                   <item>
+                    <property name="text">
+                     <string>Sasha Sloan</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Only Child</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>10 High School Me</string>
+                      </property>
+                      <property name="text">
+                       <string>spotify:track:4c8SeWzX1nvSN7chHvyq8n</string>
+                      </property>
+                      <property name="text">
+                       <string>0%</string>
+                      </property>
+                      <property name="text">
+                       <string>Pending</string>
+                      </property>
+                      <property name="text">
+                       <string>0 B/s</string>
+                      </property>
+                      <property name="text">
+                       <string>∞</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>09 Until It Happens To You</string>
+                      </property>
+                      <property name="text">
+                       <string>spotify:track:0IJQOj33GVl6osZmxClKqV</string>
+                      </property>
+                      <property name="text">
+                       <string>0%</string>
+                      </property>
+                      <property name="text">
+                       <string>Pending</string>
+                      </property>
+                      <property name="text">
+                       <string>0 B/s</string>
+                      </property>
+                      <property name="text">
+                       <string>∞</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>08 Someone You Hate</string>
+                      </property>
+                      <property name="text">
+                       <string>spotify:track:2juRTLgqPmkOjgUCVcXOeC</string>
+                      </property>
+                      <property name="text">
+                       <string>0%</string>
+                      </property>
+                      <property name="text">
+                       <string>Finding Sources</string>
+                      </property>
+                      <property name="text">
+                       <string>0 B/s</string>
+                      </property>
+                      <property name="text">
+                       <string>∞</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>07 Santa's Real</string>
+                      </property>
+                      <property name="text">
+                       <string>spotify:track:6Gy3MOuOWPNs3nEorpdx5F</string>
+                      </property>
+                      <property name="text">
+                       <string>0%</string>
+                      </property>
+                      <property name="text">
+                       <string>Finding Sources</string>
+                      </property>
+                      <property name="text">
+                       <string>0 B/s</string>
+                      </property>
+                      <property name="text">
+                       <string>∞</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>06 Is It Just Me</string>
+                      </property>
+                      <property name="text">
+                       <string>spotify:track:38MKH1U8zGuzNXbm5tCBrn</string>
+                      </property>
+                      <property name="text">
+                       <string>60%</string>
+                      </property>
+                      <property name="text">
+                       <string>Downloading</string>
+                      </property>
+                      <property name="text">
+                       <string>2.11 Mb/s</string>
+                      </property>
+                      <property name="text">
+                       <string>00:00:29</string>
+                      </property>
+                      <property name="text">
+                       <string>7.64 MiB</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string>YouTube</string>
+                      </property>
+                      <property name="text">
+                       <string>cuxNuMDet0M</string>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>05 Hypochondriac</string>
+                      </property>
+                      <property name="text">
+                       <string>spotify:track:73E2CgQVoVnyjZo6b3NO9a</string>
+                      </property>
+                      <property name="text">
+                       <string>99%</string>
+                      </property>
+                      <property name="text">
+                       <string>Encoding</string>
+                      </property>
+                      <property name="text">
+                       <string>0 B/s</string>
+                      </property>
+                      <property name="text">
+                       <string>∞</string>
+                      </property>
+                      <property name="text">
+                       <string>7.21 MiB</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string>YouTube</string>
+                      </property>
+                      <property name="text">
+                       <string>dXbL0jYSt30</string>
+                      </property>
+                      <property name="text">
+                       <string>2</string>
+                      </property>
+                      <property name="text">
+                       <string>320 Kbps</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>04 Lie</string>
+                      </property>
+                      <property name="text">
+                       <string>spotify:track:2ouNoo43UNurALLYLCapJv</string>
+                      </property>
+                      <property name="text">
+                       <string>30%</string>
+                      </property>
+                      <property name="text">
+                       <string>Downloading</string>
+                      </property>
+                      <property name="text">
+                       <string>1.10 Mb/s</string>
+                      </property>
+                      <property name="text">
+                       <string>00:00:56</string>
+                      </property>
+                      <property name="text">
+                       <string>7.36 MiB</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="text">
+                       <string>YouTube</string>
+                      </property>
+                      <property name="text">
+                       <string>J5DNZ2r5Sx4</string>
+                      </property>
+                      <property name="text">
+                       <string>1</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>03 House With No Mirrors</string>
+                      </property>
+                      <property name="text">
+                       <string>spotify:track:3iPJ039BamX9MIVZQWEnnL</string>
+                      </property>
+                      <property name="text">
+                       <string>100%</string>
+                      </property>
+                      <property name="text">
+                       <string>Completed</string>
+                      </property>
+                      <property name="text">
+                       <string>0 B/s</string>
+                      </property>
+                      <property name="text">
+                       <string>∞</string>
+                      </property>
+                      <property name="text">
+                       <string>7.87 MiB</string>
+                      </property>
+                      <property name="text">
+                       <string>8.88 MiB</string>
+                      </property>
+                      <property name="text">
+                       <string>+ 112.83%</string>
+                      </property>
+                      <property name="text">
+                       <string>YouTube</string>
+                      </property>
+                      <property name="text">
+                       <string>a6DnlCx6bx0</string>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="text">
+                       <string>320 Kbps</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>02 Only Child</string>
+                      </property>
+                      <property name="text">
+                       <string>spotify:track:1UTTbArdZ8Z7cBaAbDBAjK</string>
+                      </property>
+                      <property name="text">
+                       <string>100%</string>
+                      </property>
+                      <property name="text">
+                       <string>Completed</string>
+                      </property>
+                      <property name="text">
+                       <string>0 B/s</string>
+                      </property>
+                      <property name="text">
+                       <string>∞</string>
+                      </property>
+                      <property name="text">
+                       <string>4.77 MiB</string>
+                      </property>
+                      <property name="text">
+                       <string>5.66 MiB</string>
+                      </property>
+                      <property name="text">
+                       <string>+ 118.65%</string>
+                      </property>
+                      <property name="text">
+                       <string>YouTube</string>
+                      </property>
+                      <property name="text">
+                       <string>i70ZwQ3xtXU</string>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="text">
+                       <string>320 Kbps</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>01 Matter To You</string>
+                      </property>
+                      <property name="text">
+                       <string>spotify:track:1InPL1Qm8qJC3FIIvFruNt</string>
+                      </property>
+                      <property name="text">
+                       <string>100%</string>
+                      </property>
+                      <property name="text">
+                       <string>Completed</string>
+                      </property>
+                      <property name="text">
+                       <string>0 B/s</string>
+                      </property>
+                      <property name="text">
+                       <string>∞</string>
+                      </property>
+                      <property name="text">
+                       <string>7.72 MiB</string>
+                      </property>
+                      <property name="text">
+                       <string>8.53 MiB</string>
+                      </property>
+                      <property name="text">
+                       <string>+ 110.49%</string>
+                      </property>
+                      <property name="text">
+                       <string>YouTube</string>
+                      </property>
+                      <property name="text">
+                       <string>MhEKwqmjmhA</string>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="text">
+                       <string>320 Kbps</string>
+                      </property>
+                     </item>
+                    </item>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="icon">
+          <iconset theme="folder-music-symbolic">
+           <normaloff>.</normaloff>.</iconset>
+         </attribute>
+         <attribute name="title">
+          <string>Library</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_16">
+          <item row="0" column="0">
+           <widget class="QSplitter" name="splitter_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="QTreeWidget" name="treeWidget_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+               <horstretch>1</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="uniformRowHeights">
+              <bool>true</bool>
+             </property>
+             <property name="headerHidden">
+              <bool>true</bool>
+             </property>
+             <column>
+              <property name="text">
+               <string>Categories</string>
+              </property>
+             </column>
+             <item>
+              <property name="text">
+               <string>All</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Spotify</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Playlists</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Pop Rising</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>New Pop Revolution</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Artists</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Conan Grey</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Billie Eilish</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Sasha Sloan</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Only Child</string>
+                 </property>
+                </item>
+               </item>
+              </item>
+             </item>
+             <item>
+              <property name="text">
+               <string>Deezer</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Playlists</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Artists</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Albums</string>
+               </property>
+              </item>
+             </item>
+             <item>
+              <property name="text">
+               <string>Apple Music</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QTabWidget" name="tabWidget_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>5</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="tabPosition">
+              <enum>QTabWidget::South</enum>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="tab_11">
+              <attribute name="icon">
+               <iconset theme="view-list-symbolic">
+                <normaloff>.</normaloff>.</iconset>
+              </attribute>
+              <attribute name="title">
+               <string>Playlist</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_17">
+               <item row="0" column="0">
+                <widget class="QTreeWidget" name="treeWidget_3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="alternatingRowColors">
+                  <bool>true</bool>
+                 </property>
+                 <property name="selectionMode">
+                  <enum>QAbstractItemView::ExtendedSelection</enum>
+                 </property>
+                 <property name="rootIsDecorated">
+                  <bool>false</bool>
+                 </property>
+                 <property name="uniformRowHeights">
+                  <bool>true</bool>
+                 </property>
+                 <property name="itemsExpandable">
+                  <bool>false</bool>
+                 </property>
+                 <property name="sortingEnabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="allColumnsShowFocus">
+                  <bool>true</bool>
+                 </property>
+                 <attribute name="headerStretchLastSection">
+                  <bool>false</bool>
+                 </attribute>
+                 <column>
+                  <property name="text">
+                   <string>#</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string notr="true">Title</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Album</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Artist</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Status</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Size</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Track Number</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Disk Number</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Genre</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Label</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Copyright</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>URI</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Source</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Source URI</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>ISRC</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Cover Art</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Bitrate</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Release Date</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Download Date</string>
+                  </property>
+                 </column>
+                 <item>
+                  <property name="text">
+                   <string>10</string>
+                  </property>
+                  <property name="text">
+                   <string>High School Me</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>Pending</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>10</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="text">
+                   <string>Alternative/Indie</string>
+                  </property>
+                  <property name="text">
+                   <string>RCA Records Label</string>
+                  </property>
+                  <property name="text">
+                   <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:4c8SeWzX1nvSN7chHvyq8n</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>09</string>
+                  </property>
+                  <property name="text">
+                   <string>Until It Happens To You</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>Pending</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>09</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="text">
+                   <string>Alternative/Indie</string>
+                  </property>
+                  <property name="text">
+                   <string>RCA Records Label</string>
+                  </property>
+                  <property name="text">
+                   <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:0IJQOj33GVl6osZmxClKqV</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>08</string>
+                  </property>
+                  <property name="text">
+                   <string>Someone You Hate</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>Finding Sources</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>08</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="text">
+                   <string>Alternative/Indie</string>
+                  </property>
+                  <property name="text">
+                   <string>RCA Records Label</string>
+                  </property>
+                  <property name="text">
+                   <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:2juRTLgqPmkOjgUCVcXOeC</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>07</string>
+                  </property>
+                  <property name="text">
+                   <string>Santa's Real</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>Finding Sources</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>07</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="text">
+                   <string>Alternative/Indie</string>
+                  </property>
+                  <property name="text">
+                   <string>RCA Records Label</string>
+                  </property>
+                  <property name="text">
+                   <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:6Gy3MOuOWPNs3nEorpdx5F</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>06</string>
+                  </property>
+                  <property name="text">
+                   <string>Is It Just Me</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>Downloading</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>06</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="text">
+                   <string>Alternative/Indie</string>
+                  </property>
+                  <property name="text">
+                   <string>RCA Records Label</string>
+                  </property>
+                  <property name="text">
+                   <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:38MKH1U8zGuzNXbm5tCBrn</string>
+                  </property>
+                  <property name="text">
+                   <string>YouTube</string>
+                  </property>
+                  <property name="text">
+                   <string>cuxNuMDet0M</string>
+                  </property>
+                  <property name="text">
+                   <string>USRC12002475</string>
+                  </property>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>05</string>
+                  </property>
+                  <property name="text">
+                   <string>Hypochondriac</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>Encoding</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>05</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="text">
+                   <string>Alternative/Indie</string>
+                  </property>
+                  <property name="text">
+                   <string>RCA Records Label</string>
+                  </property>
+                  <property name="text">
+                   <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:73E2CgQVoVnyjZo6b3NO9a</string>
+                  </property>
+                  <property name="text">
+                   <string>YouTube</string>
+                  </property>
+                  <property name="text">
+                   <string>dXbL0jYSt30</string>
+                  </property>
+                  <property name="text">
+                   <string>USRC12002544</string>
+                  </property>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                  <property name="text">
+                   <string>320 Kbps</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>04</string>
+                  </property>
+                  <property name="text">
+                   <string>Lie</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>Downloading</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>04</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="text">
+                   <string>Alternative/Indie</string>
+                  </property>
+                  <property name="text">
+                   <string>RCA Records Label</string>
+                  </property>
+                  <property name="text">
+                   <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:2ouNoo43UNurALLYLCapJv</string>
+                  </property>
+                  <property name="text">
+                   <string>YouTube</string>
+                  </property>
+                  <property name="text">
+                   <string>J5DNZ2r5Sx4</string>
+                  </property>
+                  <property name="text">
+                   <string>USRC12002163</string>
+                  </property>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>03</string>
+                  </property>
+                  <property name="text">
+                   <string>House With No Mirrors</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>Completed</string>
+                  </property>
+                  <property name="text">
+                   <string>8.88 MiB</string>
+                  </property>
+                  <property name="text">
+                   <string>03</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="text">
+                   <string>Alternative/Indie</string>
+                  </property>
+                  <property name="text">
+                   <string>RCA Records Label</string>
+                  </property>
+                  <property name="text">
+                   <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:3iPJ039BamX9MIVZQWEnnL</string>
+                  </property>
+                  <property name="text">
+                   <string>YouTube</string>
+                  </property>
+                  <property name="text">
+                   <string>a6DnlCx6bx0</string>
+                  </property>
+                  <property name="text">
+                   <string>USRC12002451</string>
+                  </property>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                  <property name="text">
+                   <string>320 Kbps</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>02</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>Completed</string>
+                  </property>
+                  <property name="text">
+                   <string>5.66 MiB</string>
+                  </property>
+                  <property name="text">
+                   <string>02</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="text">
+                   <string>Alternative/Indie</string>
+                  </property>
+                  <property name="text">
+                   <string>RCA Records Label</string>
+                  </property>
+                  <property name="text">
+                   <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:1UTTbArdZ8Z7cBaAbDBAjK</string>
+                  </property>
+                  <property name="text">
+                   <string>YouTube</string>
+                  </property>
+                  <property name="text">
+                   <string>i70ZwQ3xtXU</string>
+                  </property>
+                  <property name="text">
+                   <string>USRC12002452</string>
+                  </property>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                  <property name="text">
+                   <string>320 Kbps</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>01</string>
+                  </property>
+                  <property name="text">
+                   <string>Matter To You</string>
+                  </property>
+                  <property name="text">
+                   <string>Only Child</string>
+                  </property>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string>Completed</string>
+                  </property>
+                  <property name="text">
+                   <string>8.53 MiB</string>
+                  </property>
+                  <property name="text">
+                   <string>01</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="text">
+                   <string>Alternative/Indie</string>
+                  </property>
+                  <property name="text">
+                   <string>RCA Records Label</string>
+                  </property>
+                  <property name="text">
+                   <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                  </property>
+                  <property name="text">
+                   <string>spotify:track:1InPL1Qm8qJC3FIIvFruNt</string>
+                  </property>
+                  <property name="text">
+                   <string>YouTube</string>
+                  </property>
+                  <property name="text">
+                   <string>MhEKwqmjmhA</string>
+                  </property>
+                  <property name="text">
+                   <string>USRC12002455</string>
+                  </property>
+                  <property name="text">
+                   <string>Yes</string>
+                  </property>
+                  <property name="text">
+                   <string>320 Kbps</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                  <property name="text">
+                   <string>2020-10-16</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="tab_12">
+              <attribute name="icon">
+               <iconset theme="folder">
+                <normaloff>.</normaloff>.</iconset>
+              </attribute>
+              <attribute name="title">
+               <string>Files</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_18">
+               <item row="0" column="0">
+                <widget class="QTreeWidget" name="treeWidget_5">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="alternatingRowColors">
+                  <bool>true</bool>
+                 </property>
+                 <property name="selectionMode">
+                  <enum>QAbstractItemView::ExtendedSelection</enum>
+                 </property>
+                 <property name="uniformRowHeights">
+                  <bool>true</bool>
+                 </property>
+                 <property name="sortingEnabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="allColumnsShowFocus">
+                  <bool>true</bool>
+                 </property>
+                 <attribute name="headerStretchLastSection">
+                  <bool>false</bool>
+                 </attribute>
+                 <column>
+                  <property name="text">
+                   <string notr="true">Track</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Status</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Size</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Disk Number</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Genre</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Label</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Copyright</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>URI</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Source</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Source URI</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>ISRC</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Cover Art</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Bitrate</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Release Date</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Download Date</string>
+                  </property>
+                 </column>
+                 <item>
+                  <property name="text">
+                   <string>Sasha Sloan</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Only Child</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>10 High School Me</string>
+                    </property>
+                    <property name="text">
+                     <string>Pending</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                    <property name="text">
+                     <string>Alternative/Indie</string>
+                    </property>
+                    <property name="text">
+                     <string>RCA Records Label</string>
+                    </property>
+                    <property name="text">
+                     <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                    </property>
+                    <property name="text">
+                     <string>spotify:track:4c8SeWzX1nvSN7chHvyq8n</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>09 Until It Happens To You</string>
+                    </property>
+                    <property name="text">
+                     <string>Pending</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                    <property name="text">
+                     <string>Alternative/Indie</string>
+                    </property>
+                    <property name="text">
+                     <string>RCA Records Label</string>
+                    </property>
+                    <property name="text">
+                     <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                    </property>
+                    <property name="text">
+                     <string>spotify:track:0IJQOj33GVl6osZmxClKqV</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>08 Someone You Hate</string>
+                    </property>
+                    <property name="text">
+                     <string>Finding Sources</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                    <property name="text">
+                     <string>Alternative/Indie</string>
+                    </property>
+                    <property name="text">
+                     <string>RCA Records Label</string>
+                    </property>
+                    <property name="text">
+                     <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                    </property>
+                    <property name="text">
+                     <string>spotify:track:2juRTLgqPmkOjgUCVcXOeC</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>07 Santa's Real</string>
+                    </property>
+                    <property name="text">
+                     <string>Finding Sources</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                    <property name="text">
+                     <string>Alternative/Indie</string>
+                    </property>
+                    <property name="text">
+                     <string>RCA Records Label</string>
+                    </property>
+                    <property name="text">
+                     <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                    </property>
+                    <property name="text">
+                     <string>spotify:track:6Gy3MOuOWPNs3nEorpdx5F</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>06 Is It Just Me</string>
+                    </property>
+                    <property name="text">
+                     <string>Downloading</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                    <property name="text">
+                     <string>Alternative/Indie</string>
+                    </property>
+                    <property name="text">
+                     <string>RCA Records Label</string>
+                    </property>
+                    <property name="text">
+                     <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                    </property>
+                    <property name="text">
+                     <string>spotify:track:38MKH1U8zGuzNXbm5tCBrn</string>
+                    </property>
+                    <property name="text">
+                     <string>YouTube</string>
+                    </property>
+                    <property name="text">
+                     <string>cuxNuMDet0M</string>
+                    </property>
+                    <property name="text">
+                     <string>USRC12002475</string>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>05 Hypochondriac</string>
+                    </property>
+                    <property name="text">
+                     <string>Encoding</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                    <property name="text">
+                     <string>Alternative/Indie</string>
+                    </property>
+                    <property name="text">
+                     <string>RCA Records Label</string>
+                    </property>
+                    <property name="text">
+                     <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                    </property>
+                    <property name="text">
+                     <string>spotify:track:73E2CgQVoVnyjZo6b3NO9a</string>
+                    </property>
+                    <property name="text">
+                     <string>YouTube</string>
+                    </property>
+                    <property name="text">
+                     <string>dXbL0jYSt30</string>
+                    </property>
+                    <property name="text">
+                     <string>USRC12002544</string>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                    <property name="text">
+                     <string>320 Kbps</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>04 Lie</string>
+                    </property>
+                    <property name="text">
+                     <string>Downloading</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                    <property name="text">
+                     <string>Alternative/Indie</string>
+                    </property>
+                    <property name="text">
+                     <string>RCA Records Label</string>
+                    </property>
+                    <property name="text">
+                     <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                    </property>
+                    <property name="text">
+                     <string>spotify:track:2ouNoo43UNurALLYLCapJv</string>
+                    </property>
+                    <property name="text">
+                     <string>YouTube</string>
+                    </property>
+                    <property name="text">
+                     <string>J5DNZ2r5Sx4</string>
+                    </property>
+                    <property name="text">
+                     <string>USRC12002163</string>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>03 House With No Mirrors</string>
+                    </property>
+                    <property name="text">
+                     <string>Completed</string>
+                    </property>
+                    <property name="text">
+                     <string>8.88 MiB</string>
+                    </property>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                    <property name="text">
+                     <string>Alternative/Indie</string>
+                    </property>
+                    <property name="text">
+                     <string>RCA Records Label</string>
+                    </property>
+                    <property name="text">
+                     <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                    </property>
+                    <property name="text">
+                     <string>spotify:track:3iPJ039BamX9MIVZQWEnnL</string>
+                    </property>
+                    <property name="text">
+                     <string>YouTube</string>
+                    </property>
+                    <property name="text">
+                     <string>a6DnlCx6bx0</string>
+                    </property>
+                    <property name="text">
+                     <string>USRC12002451</string>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                    <property name="text">
+                     <string>320 Kbps</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>02 Only Child</string>
+                    </property>
+                    <property name="text">
+                     <string>Completed</string>
+                    </property>
+                    <property name="text">
+                     <string>5.66 MiB</string>
+                    </property>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                    <property name="text">
+                     <string>Alternative/Indie</string>
+                    </property>
+                    <property name="text">
+                     <string>RCA Records Label</string>
+                    </property>
+                    <property name="text">
+                     <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                    </property>
+                    <property name="text">
+                     <string>spotify:track:1UTTbArdZ8Z7cBaAbDBAjK</string>
+                    </property>
+                    <property name="text">
+                     <string>YouTube</string>
+                    </property>
+                    <property name="text">
+                     <string>i70ZwQ3xtXU</string>
+                    </property>
+                    <property name="text">
+                     <string>USRC12002452</string>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                    <property name="text">
+                     <string>320 Kbps</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>01 Matter To You</string>
+                    </property>
+                    <property name="text">
+                     <string>Completed</string>
+                    </property>
+                    <property name="text">
+                     <string>8.53 MiB</string>
+                    </property>
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                    <property name="text">
+                     <string>Alternative/Indie</string>
+                    </property>
+                    <property name="text">
+                     <string>RCA Records Label</string>
+                    </property>
+                    <property name="text">
+                     <string>(P) 2020 RCA Records, a division of Sony Music Entertainment</string>
+                    </property>
+                    <property name="text">
+                     <string>spotify:track:1InPL1Qm8qJC3FIIvFruNt</string>
+                    </property>
+                    <property name="text">
+                     <string>YouTube</string>
+                    </property>
+                    <property name="text">
+                     <string>MhEKwqmjmhA</string>
+                    </property>
+                    <property name="text">
+                     <string>USRC12002455</string>
+                    </property>
+                    <property name="text">
+                     <string>Yes</string>
+                    </property>
+                    <property name="text">
+                     <string>320 Kbps</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                    <property name="text">
+                     <string>2020-10-16</string>
+                    </property>
+                   </item>
+                  </item>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_6">
+         <attribute name="icon">
+          <iconset theme="edit-find">
+           <normaloff>.</normaloff>.</iconset>
+         </attribute>
+         <attribute name="title">
+          <string>Search</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QTabWidget" name="tabWidget_3">
+            <property name="tabPosition">
+             <enum>QTabWidget::South</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <property name="movable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="tab_8">
+             <attribute name="title">
+              <string>Spotify</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="0" column="0">
+               <widget class="QScrollArea" name="scrollArea">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>750</width>
+                   <height>490</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_3">
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="title">
+                     <string>Tracks</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_7">
+                     <item row="0" column="0">
+                      <widget class="QListWidget" name="listWidget">
+                       <item>
+                        <property name="text">
+                         <string>1</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>2</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>3</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>4</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>5</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>6</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>7</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>8</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>9</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>10</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_5">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="title">
+                     <string>Albums</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_8">
+                     <item row="0" column="0">
+                      <widget class="QListWidget" name="listWidget">
+                       <item>
+                        <property name="text">
+                         <string>1</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>2</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>3</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>4</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>5</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>6</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>7</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>8</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>9</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>10</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_6">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="title">
+                     <string>Artists</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_9">
+                     <item row="0" column="0">
+                      <widget class="QListWidget" name="listWidget">
+                       <item>
+                        <property name="text">
+                         <string>1</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>2</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>3</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>4</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>5</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>6</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>7</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>8</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>9</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>10</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QGroupBox" name="groupBox_7">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="title">
+                     <string>Playlists</string>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_10">
+                     <item row="0" column="0">
+                      <widget class="QListWidget" name="listWidget">
+                       <item>
+                        <property name="text">
+                         <string>1</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>2</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>3</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>4</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>5</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>6</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>7</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>8</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>9</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>10</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_9">
+             <attribute name="title">
+              <string>Apple Music</string>
+             </attribute>
+            </widget>
+            <widget class="QWidget" name="tab_10">
+             <attribute name="title">
+              <string>Deezer</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_2"/>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_7">
+         <attribute name="icon">
+          <iconset theme="view-calendar-journal">
+           <normaloff>.</normaloff>.</iconset>
+         </attribute>
+         <attribute name="title">
+          <string>Logs</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QListWidget" name="listWidget_2">
+            <property name="selectionMode">
+             <enum>QAbstractItemView::ExtendedSelection</enum>
+            </property>
+            <item>
+             <property name="text">
+              <string>12/29/20 8:22 PM - Something Happened</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>12/29/20 8:23 PM - Something Bad Happened</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>12/29/20 8:26 PM - Something Great Happened</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QWidget" name="widget" native="true"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_6">
+          <property name="text">
+           <string>5.6 Mb/s</string>
+          </property>
+          <property name="icon">
+           <iconset theme="kt-speed-limits">
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_5">
+          <property name="toolTip">
+           <string>Total Download Size</string>
+          </property>
+          <property name="text">
+           <string>49.92 MiB</string>
+          </property>
+          <property name="icon">
+           <iconset theme="edit-download">
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_2">
+          <property name="toolTip">
+           <string>Cache Size: 34%</string>
+          </property>
+          <property name="text">
+           <string>17 MiB / 200 MiB</string>
+          </property>
+          <property name="icon">
+           <iconset theme="media-memory">
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton">
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="icon">
+           <iconset theme="configure">
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionResume"/>
+   <addaction name="actionPause"/>
+   <addaction name="separator"/>
+   <addaction name="actionRemove"/>
+   <addaction name="actionRemoveAll"/>
+   <addaction name="separator"/>
+   <addaction name="actionEditMetadata"/>
+  </widget>
+  <action name="actionResume">
+   <property name="icon">
+    <iconset theme="media-playback-start">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Resume</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset theme="media-playback-pause">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+  </action>
+  <action name="actionRemove">
+   <property name="icon">
+    <iconset theme="list-remove">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </action>
+  <action name="actionEditMetadata">
+   <property name="icon">
+    <iconset theme="document-edit">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Metadata</string>
+   </property>
+  </action>
+  <action name="actionRemoveAll">
+   <property name="icon">
+    <iconset theme="list-remove-all-symbolic">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Remove All</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
