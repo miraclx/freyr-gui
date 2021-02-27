@@ -2,7 +2,7 @@
 
 A cross-platform front-end GUI for freyr-js written in Rust
 
-> This is a mockup (just UI). For visualizing the intended project.
+> For now, this is a mockup (just UI). For visualizing the intended project.
 
 ## Setup
 
@@ -19,10 +19,24 @@ cargo run --release
 
 ## Screenshots
 
+### Queries | General
+
 ![Queries and General](media/screenshots/downloads_general.png)
+
+### Queries | Playlists
+
 ![Queries and Playlists](media/screenshots/downloads_playlist.png)
+
+### Queries | Files
+
 ![Queries and Files](media/screenshots/downloads_files.png)
+
+### Library | Playlist
+
 ![Library and Playlist](media/screenshots/library_playlist.png)
+
+### Library | Files
+
 ![Library and Files](media/screenshots/library_files.png)
 
 ## License
