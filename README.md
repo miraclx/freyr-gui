@@ -2,19 +2,20 @@
 
 A cross-platform front-end GUI for freyr-js written in Rust
 
+> This is a mockup (just UI). For visualizing the intended project.
+
 ## Setup
 
-• Install `pyqt5`
+Ensure you have Rust installed via the recommended `rustup` installation method <https://www.rust-lang.org/tools/install>
 
-• Clone and preview
+``` bash
+# Clone this repo
+git clone https://github.com/miraclx/freyr-gui freyr-gui
+cd freyr-gui
 
-  ``` bash
-  # Clone this repo
-  git clone https://github.com/miraclx/freyr-gui
-  cd freyr-gui
-  # Run the preview
-  pyuic5 -p ui/main.ui
-  ```
+# Run the preview
+cargo run --release
+```
 
 ## Screenshots
 
