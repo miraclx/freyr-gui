@@ -19,6 +19,8 @@ cargo run --release
 
 ## Screenshots
 
+*if you happen to preview this on your system, please send screenshots [See [#1](https://github.com/miraclx/freyr-gui/issues/1)]*
+
 ### Queries | General
 
 ![Queries and General](media/screenshots/downloads_general.png)
