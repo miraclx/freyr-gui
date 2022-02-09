@@ -1,6 +1,6 @@
 # freyr-gui
 
-A cross-platform front-end GUI for freyr-js written in Rust
+A cross-platform front-end GUI for [freyr-js](https://github.com/miraclx/freyr-js) written in Rust
 
 > For now, this is a mockup (just UI). For visualizing the intended project.
 
